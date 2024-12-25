@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html">
+                <img src="images/LOOGO.png" id="nedpic" alt="">
+            </a>
+            <ul class="nav__menu">
+                <a href="index.html">Home</a>
+                <a href="activities.html">Activities</a>
+                <a href="scoreboard.html">leaderboard</a>
+                <a href="calender.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="blog.html">Blog</a>
+                <a href="member.html">Members</a>
+                <a href="register.html">Register</a>
+                <a href="contact.html" class="active">Contact</a>
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+
+    <div class="contain">
+        <span class="big-circle"></span>
+        <img src="img/shape.png" class="square" alt="" />
+        <div class="form">
+            <div class="contact-info">
+                <h3 class="title">Let's get in touch</h3>
+                <p class="text">
+                    Questions? Feedback? Ideas? We want to hear them all! Reach out to us at below email address and
+                    we'll get back to you within 48 hours. Can't wait to chat!
+                </p>
+
+                <div class="info">
+                    <div class="information">
+                        <img src="images/location.png" class="icon" alt="" />
+                        <a href="https://www.google.com/maps/search/NED+University+of+Engineering+and+Technology"
+                            target="_blank" style="color: black;">
+                            <p>NED University of Engineering and Technology<br>University Rd, Karachi 75270, Pakistan
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="information">
+                        <img src="images/email.png" class="icon" alt="" />
+                        <a href="mailto:abuzarh22@outlook.com.com" style="color: black;">
+                            <p>contact@neduet.com</p>
+                        </a>
+                    </div>
+                    <div class="information">
+                        <img src="images/phone.png" class="icon" alt="" />
+                        <p>123-456-789</p>
+                    </div>
+                </div>
+
+                <div class="social-media">
+                    <p>Connect with us :</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/NEDUETOfficial?mibextid=ZbWKwL">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/ned_academy">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com/koderzclub?igshid=MzRlODBiNWFlZA==">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/koderz-klub/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
+
+                <form action="https://formspree.io/f/xqkogvyl" method="POST" autocomplete="off" onsubmit="return validateForm()">
+                    <h3 class="title">Contact us</h3>
+                    <div class="input-container">
+                        <input type="text" name="name" class="input" required />
+                        <label for="">Username</label>
+                        <span>Username</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" class="input" required />
+                        <label for="">Email</label>
+                        <span>Email</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="tel" name="phone" class="input" required />
+                        <label for="">Phone</label>
+                        <span>Phone</span>
+                    </div>
+                    <div class="input-container textarea">
+                        <textarea name="message" class="input" required></textarea>
+                        <label for="">Message</label>
+                        <span>Message</span>
+                    </div>
+                    <input type="submit" value="Send" class="btn" />
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        function validateForm() {
+            // Get form inputs
+            var nameInput = document.querySelector('input[name="name"]');
+            var emailInput = document.querySelector('input[name="email"]');
+            var phoneInput = document.querySelector('input[name="phone"]');
+    
+            // Regular expression patterns for validation
+            var namePattern = /^[A-Za-z\s]+$/;
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            var phonePattern = /^\d{11}$/;
+    
+            // Validation checks
+            if (!namePattern.test(nameInput.value)) {
+                alert("Please enter a valid name.");
+                return false;
+            }
+    
+            if (!emailPattern.test(emailInput.value)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+    
+            if (!phonePattern.test(phoneInput.value)) {
+                alert("Please enter a valid phone number.");
+                return false;
+            }
+    
+            // All validation checks passed
+            return true;
+        }
+    </script>
+
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <script>
+        const inputs = document.querySelectorAll(".input");
+
+        function focusFunc() {
+            let parent = this.parentNode;
+            parent.classList.add("focus");
+        }
+
+        function blurFunc() {
+            let parent = this.parentNode;
+            if (this.value == "") {
+                parent.classList.remove("focus");
+            }
+        }
+
+        inputs.forEach((input) => {
+            input.addEventListener("focus", focusFunc);
+            input.addEventListener("blur", blurFunc);
+        });
+
+        //change navar styles on scroll
+
+        addEventListener('scroll', () => {
+            document.querySelector('nav').classList.toggle('window-scroll', window.scrollY > 0)
+        })
+
+        //navbar script
+        const menu = document.querySelector(".nav__menu");
+        const menuBtn = document.querySelector("#open-menu-btn");
+        const closeBtn = document.querySelector("#close-menu-btn");
+
+        menuBtn.addEventListener('click', () => {
+            menu.style.display = "flex";
+            closeBtn.style.display = "inline-block";
+            menuBtn.style.display = "none";
+        })
+
+        const closeNav = () => {
+            menu.style.display = "none";
+            closeBtn.style.display = "none";
+            menuBtn.style.display = "inline-block";
+        }
+
+        closeBtn.addEventListener('click', closeNav)
+
+    </script>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <p>Contact us to learn more about our coding club and how you can get involved!</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Useful Links</h4>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="scoreboard.html">Leaderboard</a></li>
+                        <li><a href="calender.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="member.html">Members</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Connect with Us</h4>
+                    <ul class="social-iconss">
+                        <li><a href="https://www.facebook.com/NEDUETOfficial?mibextid=ZbWKwL"><i class="uil uil-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/ned_academy"><i class="uil uil-twitter"></i></a></li>
+                        <li><a href="https://instagram.com/koderzclub?igshid=MzRlODBiNWFlZA=="><i class="uil uil-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/koderz-klub/"><i class="uil uil-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>© 2023 Coding Club, All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

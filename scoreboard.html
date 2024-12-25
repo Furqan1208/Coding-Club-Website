@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/scoreboard.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Leaderboard</title>
+</head>
+
+<body>
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html">
+                <img src="images/LOOGO.png" id="nedpic" alt="">
+            </a>
+            <ul class="nav__menu">
+                <a href="index.html">Home</a>
+                <a href="activities.html">Activities</a>
+                <a href="scoreboard.html" class="active">leaderboard</a>
+                <a href="calender.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="blog.html">Blog</a>
+                <a href="member.html">Members</a>
+                <a href="register.html">Register</a>
+                <a href="contact.html">Contact</a>
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- -------------------------------------  MAIN DIV    ---------------------------------------->
+        <!-- -------------------------------------  NAVBAR    ---------------------------------------->
+
+        <!-- -------------------------------- Leader Board Paragraph    ---------------------------------------->
+        <div>
+            <div class="row justify-content-around mt-5">
+                <div class="col-12 text-center">
+                    <h1 class="lead-para">
+                        <span> At Ned University, coding competitions are</span>
+                        <span> a regular occurrence, with students and faculty</span>
+                        <span> members participating in a variety of contests</span>
+                        <span> throughout the year. One of the most anticipated </span>
+                        <span> aspects of these competitions is the leaderboard,</span>
+                        <span> which tracks the progress of the participants and</span>
+                        <span> displays their scores in real-time. </span>
+
+                    </h1>
+                </div>
+            </div>
+            <hr class="hr1">
+        </div>
+
+        <div class="container titleof">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3 class="animate-charcter">
+                        HIGH ACHIEVERS
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <hr class="hr1">
+        <!-- -------------------------------------  Leader Boards    ---------------------------------------->
+        <div class=" leadcards row justify-content-around">
+            <div class="col-lg-3 mt-5">
+                <div class="leaderboard">
+                    <h1>
+                        <svg class="ico-cup">
+                            <use xlink:href="#cup"></use>
+                        </svg>
+                        WEB KODE
+                    </h1>
+                    <ol>
+                        <li>
+                            <mark>Bit Busters</mark>
+                            <small>315</small>
+                        </li>
+                        <li>
+                            <mark>Team Alpha</mark>
+                            <small>301</small>
+                        </li>
+                        <li>
+                            <mark>Code Knight</mark>
+                            <small>292</small>
+                        </li>
+                        <li>
+                            <mark>Error 404</mark>
+                            <small>245</small>
+                        </li>
+                        <li>
+                            <mark>Fox code</mark>
+                            <small>203</small>
+                        </li>
+                    </ol>
+                </div>
+
+
+                <svg style="display: none;">
+                    <symbol id="cup" x="0px" y="0px" width="25px" height="26px" viewBox="0 0 25 26"
+                        enable-background="new 0 0 25 26" xml:space="preserve">
+                        <path fill="#F26856"
+                            d="M21.215,1.428c-0.744,0-1.438,0.213-2.024,0.579V0.865c0-0.478-0.394-0.865-0.88-0.865H6.69
+                C6.204,0,5.81,0.387,5.81,0.865v1.142C5.224,1.641,4.53,1.428,3.785,1.428C1.698,1.428,0,3.097,0,5.148
+                C0,7.2,1.698,8.869,3.785,8.869h1.453c0.315,0,0.572,0.252,0.572,0.562c0,0.311-0.257,0.563-0.572,0.563
+                c-0.486,0-0.88,0.388-0.88,0.865c0,0.478,0.395,0.865,0.88,0.865c0.421,0,0.816-0.111,1.158-0.303
+                c0.318,0.865,0.761,1.647,1.318,2.31c0.686,0.814,1.515,1.425,2.433,1.808c-0.04,0.487-0.154,1.349-0.481,2.191
+                c-0.591,1.519-1.564,2.257-2.975,2.257H5.238c-0.486,0-0.88,0.388-0.88,0.865v4.283c0,0.478,0.395,0.865,0.88,0.865h14.525
+                c0.485,0,0.88-0.388,0.88-0.865v-4.283c0-0.478-0.395-0.865-0.88-0.865h-1.452c-1.411,0-2.385-0.738-2.975-2.257
+                c-0.328-0.843-0.441-1.704-0.482-2.191c0.918-0.383,1.748-0.993,2.434-1.808c0.557-0.663,1-1.445,1.318-2.31
+                c0.342,0.192,0.736,0.303,1.157,0.303c0.486,0,0.88-0.387,0.88-0.865c0-0.478-0.394-0.865-0.88-0.865
+                c-0.315,0-0.572-0.252-0.572-0.563c0-0.31,0.257-0.562,0.572-0.562h1.452C23.303,8.869,25,7.2,25,5.148
+                C25,3.097,23.303,1.428,21.215,1.428z M5.238,7.138H3.785c-1.116,0-2.024-0.893-2.024-1.99c0-1.097,0.908-1.99,2.024-1.99
+                c1.117,0,2.025,0.893,2.025,1.99v2.06C5.627,7.163,5.435,7.138,5.238,7.138z M18.883,21.717v2.553H6.118v-2.553H18.883
+                L18.883,21.717z M13.673,18.301c0.248,0.65,0.566,1.214,0.947,1.686h-4.24c0.381-0.472,0.699-1.035,0.947-1.686
+                c0.33-0.865,0.479-1.723,0.545-2.327c0.207,0.021,0.416,0.033,0.627,0.033c0.211,0,0.42-0.013,0.627-0.033
+                C13.195,16.578,13.344,17.436,13.673,18.301z M12.5,14.276c-2.856,0-4.93-2.638-4.93-6.273V1.73h9.859v6.273
+                C17.43,11.638,15.357,14.276,12.5,14.276z M21.215,7.138h-1.452c-0.197,0-0.39,0.024-0.572,0.07v-2.06
+                c0-1.097,0.908-1.99,2.024-1.99c1.117,0,2.025,0.893,2.025,1.99C23.241,6.246,22.333,7.138,21.215,7.138z" />
+                    </symbol>
+                </svg>
+            </div>
+            <div class="col-lg-3 mt-5">
+                <div class="leaderboard">
+                    <h1>
+                        <svg class="ico-cup">
+                            <use xlink:href="#cup"></use>
+                        </svg>
+                        Koderz Kombat
+                    </h1>
+                    <ol>
+                        <li>
+                            <mark>Bit Busters</mark>
+                            <small>315</small>
+                        </li>
+                        <li>
+                            <mark>stack overflow</mark>
+                            <small>301</small>
+                        </li>
+                        <li>
+                            <mark>Markup001</mark>
+                            <small>292</small>
+                        </li>
+                        <li>
+                            <mark>Shining Stars</mark>
+                            <small>245</small>
+                        </li>
+                        <li>
+                            <mark>Team Pluto</mark>
+                            <small>203</small>
+                        </li>
+                    </ol>
+                </div>
+
+
+                <svg style="display: none;">
+                    <symbol id="cup" x="0px" y="0px" width="25px" height="26px" viewBox="0 0 25 26"
+                        enable-background="new 0 0 25 26" xml:space="preserve">
+                        <path fill="#F26856"
+                            d="M21.215,1.428c-0.744,0-1.438,0.213-2.024,0.579V0.865c0-0.478-0.394-0.865-0.88-0.865H6.69
+                C6.204,0,5.81,0.387,5.81,0.865v1.142C5.224,1.641,4.53,1.428,3.785,1.428C1.698,1.428,0,3.097,0,5.148
+                C0,7.2,1.698,8.869,3.785,8.869h1.453c0.315,0,0.572,0.252,0.572,0.562c0,0.311-0.257,0.563-0.572,0.563
+                c-0.486,0-0.88,0.388-0.88,0.865c0,0.478,0.395,0.865,0.88,0.865c0.421,0,0.816-0.111,1.158-0.303
+                c0.318,0.865,0.761,1.647,1.318,2.31c0.686,0.814,1.515,1.425,2.433,1.808c-0.04,0.487-0.154,1.349-0.481,2.191
+                c-0.591,1.519-1.564,2.257-2.975,2.257H5.238c-0.486,0-0.88,0.388-0.88,0.865v4.283c0,0.478,0.395,0.865,0.88,0.865h14.525
+                c0.485,0,0.88-0.388,0.88-0.865v-4.283c0-0.478-0.395-0.865-0.88-0.865h-1.452c-1.411,0-2.385-0.738-2.975-2.257
+                c-0.328-0.843-0.441-1.704-0.482-2.191c0.918-0.383,1.748-0.993,2.434-1.808c0.557-0.663,1-1.445,1.318-2.31
+                c0.342,0.192,0.736,0.303,1.157,0.303c0.486,0,0.88-0.387,0.88-0.865c0-0.478-0.394-0.865-0.88-0.865
+                c-0.315,0-0.572-0.252-0.572-0.563c0-0.31,0.257-0.562,0.572-0.562h1.452C23.303,8.869,25,7.2,25,5.148
+                C25,3.097,23.303,1.428,21.215,1.428z M5.238,7.138H3.785c-1.116,0-2.024-0.893-2.024-1.99c0-1.097,0.908-1.99,2.024-1.99
+                c1.117,0,2.025,0.893,2.025,1.99v2.06C5.627,7.163,5.435,7.138,5.238,7.138z M18.883,21.717v2.553H6.118v-2.553H18.883
+                L18.883,21.717z M13.673,18.301c0.248,0.65,0.566,1.214,0.947,1.686h-4.24c0.381-0.472,0.699-1.035,0.947-1.686
+                c0.33-0.865,0.479-1.723,0.545-2.327c0.207,0.021,0.416,0.033,0.627,0.033c0.211,0,0.42-0.013,0.627-0.033
+                C13.195,16.578,13.344,17.436,13.673,18.301z M12.5,14.276c-2.856,0-4.93-2.638-4.93-6.273V1.73h9.859v6.273
+                C17.43,11.638,15.357,14.276,12.5,14.276z M21.215,7.138h-1.452c-0.197,0-0.39,0.024-0.572,0.07v-2.06
+                c0-1.097,0.908-1.99,2.024-1.99c1.117,0,2.025,0.893,2.025,1.99C23.241,6.246,22.333,7.138,21.215,7.138z" />
+                    </symbol>
+                </svg>
+            </div>
+            <div class="col-lg-3 mt-5">
+                <div class="leaderboard">
+                    <h1>
+                        <svg class="ico-cup">
+                            <use xlink:href="#cup"></use>
+                        </svg>
+                        Most active Players
+                    </h1>
+                    <ol>
+                        <li>
+                            <mark>Furqan </mark>
+                            <small>315</small>
+                        </li>
+                        <li>
+                            <mark>Abuzar Hashmi</mark>
+                            <small>301</small>
+                        </li>
+                        <li>
+                            <mark>Muhaib shamsher</mark>
+                            <small>292</small>
+                        </li>
+                        <li>
+                            <mark>Anas mirza</mark>
+                            <small>245</small>
+                        </li>
+                        <li>
+                            <mark>Ahmed Raza</mark>
+                            <small>203</small>
+                        </li>
+                    </ol>
+                </div>
+
+
+                <svg style="display: none;">
+                    <symbol id="cup" x="0px" y="0px" width="25px" height="26px" viewBox="0 0 25 26"
+                        enable-background="new 0 0 25 26" xml:space="preserve">
+                        <path fill="#F26856"
+                            d="M21.215,1.428c-0.744,0-1.438,0.213-2.024,0.579V0.865c0-0.478-0.394-0.865-0.88-0.865H6.69
+                C6.204,0,5.81,0.387,5.81,0.865v1.142C5.224,1.641,4.53,1.428,3.785,1.428C1.698,1.428,0,3.097,0,5.148
+                C0,7.2,1.698,8.869,3.785,8.869h1.453c0.315,0,0.572,0.252,0.572,0.562c0,0.311-0.257,0.563-0.572,0.563
+                c-0.486,0-0.88,0.388-0.88,0.865c0,0.478,0.395,0.865,0.88,0.865c0.421,0,0.816-0.111,1.158-0.303
+                c0.318,0.865,0.761,1.647,1.318,2.31c0.686,0.814,1.515,1.425,2.433,1.808c-0.04,0.487-0.154,1.349-0.481,2.191
+                c-0.591,1.519-1.564,2.257-2.975,2.257H5.238c-0.486,0-0.88,0.388-0.88,0.865v4.283c0,0.478,0.395,0.865,0.88,0.865h14.525
+                c0.485,0,0.88-0.388,0.88-0.865v-4.283c0-0.478-0.395-0.865-0.88-0.865h-1.452c-1.411,0-2.385-0.738-2.975-2.257
+                c-0.328-0.843-0.441-1.704-0.482-2.191c0.918-0.383,1.748-0.993,2.434-1.808c0.557-0.663,1-1.445,1.318-2.31
+                c0.342,0.192,0.736,0.303,1.157,0.303c0.486,0,0.88-0.387,0.88-0.865c0-0.478-0.394-0.865-0.88-0.865
+                c-0.315,0-0.572-0.252-0.572-0.563c0-0.31,0.257-0.562,0.572-0.562h1.452C23.303,8.869,25,7.2,25,5.148
+                C25,3.097,23.303,1.428,21.215,1.428z M5.238,7.138H3.785c-1.116,0-2.024-0.893-2.024-1.99c0-1.097,0.908-1.99,2.024-1.99
+                c1.117,0,2.025,0.893,2.025,1.99v2.06C5.627,7.163,5.435,7.138,5.238,7.138z M18.883,21.717v2.553H6.118v-2.553H18.883
+                L18.883,21.717z M13.673,18.301c0.248,0.65,0.566,1.214,0.947,1.686h-4.24c0.381-0.472,0.699-1.035,0.947-1.686
+                c0.33-0.865,0.479-1.723,0.545-2.327c0.207,0.021,0.416,0.033,0.627,0.033c0.211,0,0.42-0.013,0.627-0.033
+                C13.195,16.578,13.344,17.436,13.673,18.301z M12.5,14.276c-2.856,0-4.93-2.638-4.93-6.273V1.73h9.859v6.273
+                C17.43,11.638,15.357,14.276,12.5,14.276z M21.215,7.138h-1.452c-0.197,0-0.39,0.024-0.572,0.07v-2.06
+                c0-1.097,0.908-1.99,2.024-1.99c1.117,0,2.025,0.893,2.025,1.99C23.241,6.246,22.333,7.138,21.215,7.138z" />
+                    </symbol>
+                </svg>
+            </div>
+        </div>
+
+
+
+        
+       
+        <!-- --------------------------------    END DIV    --------------------------------------------  -->
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Leaderboard</h4>
+                    <p>See how your team is doing: Check out the latest scores and standings!</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Useful Links</h4>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="scoreboard.html">Leaderboard</a></li>
+                        <li><a href="calender.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="member.html">Members</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Connect with Us</h4>
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com"><i class="uil uil-facebook"></i></a></li>
+                        <li><a href="https://twitter.com"><i class="uil uil-twitter"></i></a></li>
+                        <li><a href="https://instagram.com"><i class="uil uil-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com"><i class="uil uil-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>© 2023 Coding Club, All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        //change navar styles on scroll
+
+        addEventListener('scroll', () => {
+            document.querySelector('nav').classList.toggle('window-scroll', window.scrollY > 0)
+        })
+
+        //navbar script
+        const menu = document.querySelector(".nav__menu");
+        const menuBtn = document.querySelector("#open-menu-btn");
+        const closeBtn = document.querySelector("#close-menu-btn");
+
+        menuBtn.addEventListener('click', () => {
+            menu.style.display = "flex";
+            closeBtn.style.display = "inline-block";
+            menuBtn.style.display = "none";
+        })
+
+        const closeNav = () => {
+            menu.style.display = "none";
+            closeBtn.style.display = "none";
+            menuBtn.style.display = "inline-block";
+        }
+
+        closeBtn.addEventListener('click', closeNav)
+
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({
+          reset: true,
+          distance: '80px',
+          duration: 2000,
+          delay: 200
+      });
+      
+      ScrollReveal().reveal('.leaderboard', { origin: 'bottom' });
+  </script>
+</body>
+
+</html>

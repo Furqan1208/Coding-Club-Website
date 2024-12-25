@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/blog.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html">
+                <img src="images/LOOGO.png" id="nedpic" alt="">
+            </a>
+            <ul class="nav__menu">
+                <a href="index.html">Home</a>
+                <a href="activities.html">Activities</a>
+                <a href="scoreboard.html">leaderboard</a>
+                <a href="calender.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="blog.html" class="active">Blog</a>
+                <a href="member.html">Members</a>
+                <a href="register.html">Register</a>
+                <a href="contact.html">Contact</a>
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <div class="m-auto content max-width-1 my-2">
+        <div class="content-left">
+            <h1>The Coding Club Blog</h1>
+            <p>Welcome to the Coding Club Blog, the perfect platform to showcase your coding skills and share your
+                knowledge with
+                others! Submit your articles to us and we'll feature them on our website, giving you the opportunity to
+                reach a
+                wider audience.</p>
+            <p>As we move into the summer season, let's take a moment to enjoy the sunny weather, blue skies, and
+                outdoor activities. It's a time for beach trips, barbecues, and of course, coding!</p>
+        </div>
+        <div class="content-right">
+            <div class="cube">
+                <div class="face front">
+                    <img src="images1/lan1.png" alt="iBlog">
+                </div>
+                <div class="face back">
+                    <img src="images1/lan2.png" alt="iBlog">
+                </div>
+                <div class="face left">
+                    <img src="images1/lan3.png" alt="iBlog">
+                </div>
+                <div class="face right">
+                    <img src="images1/lan4.png" alt="iBlog">
+                </div>
+                <div class="face top">
+                    <img src="images1/lan5.png" alt="iBlog">
+                </div>
+                <div class="face bottom">
+                    <img src="images1/lan6.png" alt="iBlog">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section class="about container" id="about">
+        <div class="imgBx">
+            <img src="images1/about.png" alt="" class="fitBg">
+        </div>
+        <div class="contentBx">
+            <h2 class="titleText">Stay up-to-date with the latest in tech</h2>
+            <p class="title-text">
+                Welcome to our blog section, where we provide you with the latest news and trends in the world of
+                technology. Our team of expert writers and researchers work hard to bring you the most up-to-date
+                information and insights on topics ranging from programming and software development to artificial
+                intelligence and machine learning.
+                <br>Whether you're a beginner or an experienced developer, our blog has something for everyone. From
+                tutorials and guides to industry news and opinion pieces, we aim to keep you informed and inspired in
+                your tech journey. So sit back, relax, and let us guide you through the exciting and ever-changing world
+                of technology.
+            </p>
+            <a href="#" class="btn2">Read more</a>
+        </div>
+    </section>
+
+    <div class="post-filter container">
+        <span class="filter-item active-filter" data-filter="all">All</span>
+        <span class="filter-item" data-filter="ai">AI</span>
+        <span class="filter-item" data-filter="cys">CYS</span>
+        <span class="filter-item" data-filter="ds">DS</span>
+    </div>
+
+    <div class="post container">
+        <!-- Post 1 -->
+        <div class="post-box ai">
+            <img src="images1/img1.jpg" alt="" class="post-img">
+            <h2 class="category">AI</h2>
+            <a href=" https://ai.googleblog.com/" class="post-title">How to create the best UI with Figma</a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Master the art of UI design with Figma, a powerful design tool for creating
+                stunning user interfaces.</p>
+            <div class="profile">
+                <img src="images/CT_logo.jpeg" alt="" class="profile-img">
+                <span class="profile-name"></span>
+            </div>
+        </div>
+
+        <!-- Post 2 -->
+        <div class="post-box ai">
+            <img src="images1/img2.jpg" alt="" class="post-img">
+            <h2 class="category">AI</h2>
+            <a href="https://deepmind.com/blog/" class="post-title">10 Examples of Artificial Intelligence in Everyday
+                Life</a>
+            <span class="post-date">14 Feb 2022</span>
+            <p class="post-description">Explore how AI is transforming everyday life through these 10 real-world
+                examples.</p>
+            <div class="profile">
+                <img src="images/CT_logo.jpeg" alt="" class="profile-img">
+                <span class="profile-name"></span>
+            </div>
+        </div>
+
+        <!-- Post 3 -->
+        <div class="post-box ai">
+            <img src="images1/img3.jpg" alt="" class="post-img">
+            <h2 class="category">AI</h2>
+            <a href="https://openai.com/blog/" class="post-title">The Future of Artificial Intelligence: 5 Predictions
+                for 2023</a>
+            <span class="post-date">16 Feb 2022</span>
+            <p class="post-description">Take a glimpse into the future of AI and discover 5 predictions that are set to
+                shape the landscape in 2023.</p>
+            <div class="profile">
+                <img src="images/CT_logo.jpeg" alt="" class="profile-img">
+                <span class="profile-name"></span>
+            </div>
+        </div>
+
+        <!-- Post 4 -->
+        <div class="post-box ai">
+            <img src="images1/img4.jpg" alt="" class="post-img">
+            <h2 class="category">AI</h2>
+            <a href="https://ai.facebook.com/blog/" class="post-title">Understanding Artificial Intelligence and Machine
+                Learning</a>
+            <span class="post-date">18 Feb 2022</span>
+            <p class="post-description">Discover the world of AI and machine learning in this introductory guide.</p>
+            <div class="profile">
+                <img src="images/CT_logo.jpeg" alt="" class="profile-img">
+                <span class="profile-name"></span>
+            </div>
+        </div>
+
+        <!-- Post 5 -->
+        <div class="post-box cys">
+            <img src="images1/img5.jpg" alt="" class="post-img">
+            <h2 class="category">CYS</h2>
+            <a href="https://blubrry.com/mysecurity/" class="post-title">10 Benefits of a Cybersecurity Career</a>
+            <span class="post-date">20 Feb 2022</span>
+            <p class="post-description">Explore the top 10 reasons why a cybersecurity career can be both rewarding and
+                fulfilling.</p>
+            <div class="profile">
+                <img src="images/CT_logo.jpeg" alt="" class="profile-img">
+                <span class="profile-name"></span>
+            </div>
+        </div>
+
+        <!-- Post 6 -->
+        <div class="post-box cys">
+            <img src="images1/img6.jpg" alt="" class="post-img">
+            <h2 class="category">CYS</h2>
+            <a href="https://www.darkreading.com/archives.asp?threads=yes&" class="post-title">How to Stay Safe Online: Tips for Cybersecurity</a>
+            <span class="post-date">22 Feb 2022</span>
+            <p class="post-description">Learn practical tips and tricks to enhance your online safety and protect
+                yourself from cyber threats.</p>
+            <div class="profile">
+                <img src="images/CT_logo.jpeg" alt="" class="profile-img">
+                <span class="profile-name"></span>
+            </div>
+        </div>
+
+        <!-- Post 7 -->
+        <div class=" post-box ds">
+            <img src="images1/img7.jpg" alt="" class="post-img">
+            <h2 class="category">DS</h2>
+            <a href="https://towardsdatascience.com/" class="post-title">Data Science vs Machine Learning: What's the
+                Difference?</a>
+            <span class="post-date">22 Feb 2022</span>
+            <p class="post-description">Unpack the key differences between data science and machine learning, and
+                understand how they complement each other.</p>
+            <div class="profile">
+                <img src="images/CT_logo.jpeg" alt="" class="profile-img">
+                <span class="profile-name"></span>
+            </div>
+        </div>
+        <!-- Post 8 -->
+        <div class="post-box ds">
+            <img src="images1/img8.jpg" alt="" class="post-img">
+            <h2 class="category">DS</h2>
+            <a href="https://twitter.com/Datasciencectrl" class="post-title">Top 5 Programming Languages for Data Science in
+                2022</a>
+            <span class="post-date">24 Feb 2022</span>
+            <p class="post-description">Find out which programming languages are essential for data science and why they
+                matter.</p>
+            <div class="profile">
+                <img src="images/CT_logo.jpeg" alt="" class="profile-img">
+                <span class="profile-name"></span>
+            </div>
+        </div>
+        <!-- Post 9 -->
+        <div class="post-box ds">
+            <img src="images1/img9.jpg" alt="" class="post-img">
+            <h2 class="category">DS</h2>
+            <a href="https://machinelearningmastery.com/" class="post-title">How to Learn Data Science: A Beginner's
+                Guide</a>
+            <span class="post-date">26 Feb 2022</span>
+            <p class="post-description">Begin your data science journey with this comprehensive beginner's guide that
+                covers everything you need to know.</p>
+            <div class="profile">
+                <img src="images/CT_logo.jpeg" alt="" class="profile-img">
+                <span class="profile-name"></span>
+            </div>
+        </div>
+        <!-- Post 10 -->
+        <div class="post-box ds">
+            <img src="images1/img10.png" alt="" class="post-img">
+            <h2 class="category">DS</h2>
+            <a href=" https://www.blogger.com/" class="post-title">Introduction to Data Science: What It Is, Why
+                It Matters</a>
+            <span class="post-date">28 Feb 2022</span>
+            <p class="post-description">Get an overview of data science and why it's a critical field in today's
+                data-driven world.</p>
+            <div class="profile">
+                <img src="images/CT_logo.jpeg" alt="" class="profile-img">
+                <span class="profile-name"></span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function () {
+            $(".filter-item").click(function () {
+                const value = $(this).attr("data-filter");
+                if (value == "all") {
+                    $(".post-box").show("1000")
+                } else {
+                    $(".post-box")
+                        .not("." + value)
+                        .hide(1000);
+                    $(".post-box")
+                        .filter("." + value)
+                        .show("1000")
+                }
+            });
+            $(".filter-item").click(function () {
+                $(this).addClass("active-filter").siblings().removeClass("active-filter")
+            });
+        });
+    </script>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        //change navar styles on scroll
+
+        addEventListener('scroll', () => {
+            document.querySelector('nav').classList.toggle('window-scroll', window.scrollY > 0)
+        })
+
+        //navbar script
+        const menu = document.querySelector(".nav__menu");
+        const menuBtn = document.querySelector("#open-menu-btn");
+        const closeBtn = document.querySelector("#close-menu-btn");
+
+        menuBtn.addEventListener('click', () => {
+            menu.style.display = "flex";
+            closeBtn.style.display = "inline-block";
+            menuBtn.style.display = "none";
+        })
+
+        const closeNav = () => {
+            menu.style.display = "none";
+            closeBtn.style.display = "none";
+            menuBtn.style.display = "inline-block";
+        }
+
+        closeBtn.addEventListener('click', closeNav)
+        //header
+        const heading = document.querySelector('.content-left h1');
+        const text = heading.textContent;
+        heading.textContent = '';
+
+        let i = 0;
+        function type() {
+            if (i < text.length) {
+                heading.textContent += text.charAt(i);
+                i++;
+                setTimeout(type, 50);
+            }
+        }
+        type();
+    </script>
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '80px',
+            duration: 1200,
+            delay:180
+        });
+        ScrollReveal().reveal('.content-right', { origin: 'top' });
+        ScrollReveal().reveal('', { origin: 'right' });
+        ScrollReveal().reveal('.imgBx , .post-filter,.content-left', { origin: 'left' });
+        ScrollReveal().reveal('h2', { origin: 'bottom' });
+    </script>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Blogs</h4>
+                    <p>Check out our latest posts on coding, programming, and tech news!</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Useful Links</h4>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="scoreboard.html">Leaderboard</a></li>
+                        <li><a href="calender.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="member.html">Members</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Connect with Us</h4>
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/NEDUETOfficial?mibextid=ZbWKwL"><i class="uil uil-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/ned_academy"><i class="uil uil-twitter"></i></a></li>
+                        <li><a href="https://instagram.com/koderzclub?igshid=MzRlODBiNWFlZA=="><i class="uil uil-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/koderz-klub/"><i class="uil uil-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>© 2023 Coding Club, All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

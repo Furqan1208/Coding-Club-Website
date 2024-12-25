@@ -1,0 +1,17 @@
+body{
+    background: rgb(12,105,196);
+    background: radial-gradient(circle, rgba(12,105,196,1) 0%, rgba(38,41,42,1) 96%);
+            
+    padding: 0%;
+}
+/* h1 {
+      color: aliceblue; 
+      align-self: center; 
+    } */
+   /* @media (max-width :500px) { */
+    /* .cont1{ */
+        /* width: 120%; */
+        /* align-self: center; */
+        /* justify-content: center; */
+    /* } */
+   /* } */
